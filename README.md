@@ -301,12 +301,4 @@ Ship names are normalized (uppercase, trimmed) to match vessels between APIs:
 
 ## License
 
-MIT License - see LICENSE file for details
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## Author
-
-Built following the icebreaker-exporter pattern for Prometheus exporters, combining dual-source data collection with real-time streaming.
+[MIT License](LICENSE)
