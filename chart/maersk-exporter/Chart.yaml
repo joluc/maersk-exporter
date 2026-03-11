@@ -1,0 +1,16 @@
+apiVersion: v2
+name: maersk-exporter
+description: A Prometheus exporter for Maersk vessel fleet monitoring with real-time AIS positions
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - prometheus
+  - exporter
+  - maersk
+  - shipping
+  - ais
+  - vessel-tracking
+home: https://github.com/joluc/maersk-exporter
+maintainers:
+  - name: joluc

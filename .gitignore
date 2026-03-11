@@ -1,0 +1,26 @@
+# Binaries
+/maersk-exporter
+*.exe
+*.test
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# Editor files
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/
+
+# Test/coverage
+*.out
+coverage.txt
+coverage.out
+
+# Build artifacts
+dist/
