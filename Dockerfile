@@ -1,5 +1,8 @@
 # Build stage
-FROM golang:1.26 AS builder
+FROM --platform=$BUILDPLATFORM golang:1.26 AS builder
+
+ARG TARGETOS
+ARG TARGETARCH
 
 WORKDIR /app
 
@@ -11,7 +14,7 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN CGO_ENABLED=0 GOOS=linux go build -o maersk-exporter ./cmd/maersk-exporter
+RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o maersk-exporter ./cmd/maersk-exporter
 
 # Run stage
 FROM gcr.io/distroless/static-debian12:latest
